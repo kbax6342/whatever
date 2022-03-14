@@ -1,0 +1,40 @@
+{
+  "name": "las-vegas",
+  "version": "1.0.0",
+  "nodemonConfig": {
+    "ext": "js,html"
+  },
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "gulp": "^4.0.2",
+    "heroku": "^7.59.4",
+    "mdbootstrap": "^4.20.0",
+    "multiparty": "^4.2.3",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15",
+    "npm-watch": "^0.11.0",
+    "zoomwall.js": "^2.0.3"
+  },
+  "devDependencies": {},
+  "watch": {
+    "start": "node server.js",
+    "test": {
+      "extensions": "js,html,css",
+      "ignore": "",
+      "quiet": true,
+      "legacyWatch": true,
+      "delay": 2500,
+      "runOnChangeOnly": true
+    }
+  },
+  "scripts": {
+    "watch": "npm-watch",
+    "test": "",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

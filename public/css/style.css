@@ -1,0 +1,104 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body .container-fluid{
+    padding: 0px !important;
+}
+
+.kb-dropdown-item:hover {
+    color: red !important;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+section {
+    margin: 0px;
+}
+
+.jumbotron{
+    margin-bottom: 0px !important;
+    min-height: 1000px;
+}
+
+.pricing-background {
+    background-image: url("https://i.ibb.co/Dt1F6gV/Untitled-design-16.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+  #contact {
+    min-width: 100%;
+  }
+
+  .grey-border{
+      border: solid 1px lightgrey !important;
+  }
+  input::placeholder{
+    color: rgb(220,220,220) !important;
+    opacity: 1;
+  }
+
+  textarea::placeholder{
+    color: rgb(220,220,220) !important;
+    opacity: 1;
+  }
+ 
+
+  
+  .neon-text {
+    text-shadow: 
+    .1vw 0vw .15vw #f2ce57, .2vw 0vw .15vw #f2ce57, .4vw 0vw .15vw #f2ce57, 
+  
+    .1vw 0vw   0vw #f2ce57, .3vw 0vw   0vw #f2ce57,
+    .1vw 0vw  .1vw #f2ce57,  .3vw 0vw  .1vw #f2ce57,
+    .1vw 0vw   2vw #f2ce57,  .3vw 0vw   2vw #f2ce57, 
+  
+    .1vw 0vw   1vw #fedd58, 
+    .1vw 0vw   5vw #fedd58, 
+    .1vw 0vw  5vw #fedd58;  
+  }
+
+  .neon-text li {
+      list-style: none;
+  }
+
+
+
+/* Footer Styling */
+
+.social-footer {
+    padding: 1rem;
+    
+  
+  }
+
+  .menu  li{
+      list-style: none;
+  }
+  
+  .social-footer .social-footer-icons li:last-of-type {
+    margin-right: 0;
+  }
+  
+  .social-footer .social-footer-icons .fa {
+    font-size: 1.3rem;
+    color: #fefefe;
+  }
+  
+  .social-footer .social-footer-icons .fa:hover {
+    color: #4a4a4a;
+    transition: color 0.3s ease-in;
+  }
+  
+   /* End of Footer Styling */
+
+
+  .red-gradient{
+    background: linear-gradient(-120DEG, #D62121, #c72c2c, #eb5a5a);
+
+  }

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover-styling.css">
+    <link rel="stylesheet" href="css/img-gallery.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css"
+        integrity="sha512-tk4nGrLxft4l30r9ETuejLU0a3d7LwMzj0eXjzc16JQj+5U1IeVoCuGLObRDc3+eQMUcEQY1RIDPGvuA7SNQ2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="zoomwall.css">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
+    </script>
+    <style>
+        .list-group-item {
+            background-color: transparent !important;
+            border-bottom: none !important;
+
+        }
+
+
+      
+        .grow {
+        transition: all .2s ease-in-out;
+        }
+
+        .day:hover {
+          transform: scale(1.1);
+        }
+   
+
+        .times-serif {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ul>.list-group-flush {
+            padding-left: 0px !important;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .red-gradient {
+            background: linear-gradient(40deg, #f81e21, #426dd0);
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="nav">
+        <div class="jumbotron card card-image p-0 "
+            style="background-image: url(https://i.ibb.co/TqD5VdH/The-Big-Dogs-3.png); background-size: cover; min-height: 52em;">
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark transparent">
+
+                <!-- Navbar brand -->
+                <a href="/" class="col-1">
+                    <img src="https://i.ibb.co/vJS3Jn0/Royal-Flush-Logo-Transparent.png" alt="" class="col-12  mr-3">
+                </a>
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link h4-responsive" href="#hotel">Hotel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h4-responsive" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h4-responsive" href="/vendor">Vendors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h4-responsive" href="/volunteer"> Volunteer</a>
+                        </li>
+
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link h4-responsive" href="/itinerary"> Itinerary</a>
+                            <div>
+                                something
+                            </div>
+
+                        </li>
+
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle h4-responsive" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item  kb-dropdown-item" href="#">Request Information</a>
+                                <a class="dropdown-item kb-dropdown-item " href="#contact">Contact Us</a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- Links -->
+
+                    <img src="https://i.ibb.co/HxdqRQL/Royal-Flush-2.png" alt="Royal-Flush-2" border="0"
+                        class="img-fluidcol-3" style="max-height: 50px !important">
+
+
+            </nav>
+            <!--/.Navbar-->
+
+            <!-- page content -->
+            <section id="itinerary" class="col-8 mx-auto red-gradient py-5 mt-5">
+                <p class="display-3 white-text text-center">Schedule</p>
+                <div class="row d-flex flex-column">
+                    <!-- Card -->
+                    <div class="card day rounded-lg z-depth-1 col-8 mx-auto mt-3 rgba-white-light border-0"
+                        style="min-height: 200px;">
+
+
+                        <!-- Card content -->
+                        <div class="card-body d-flex flex-row col-12 py-2">
+                            <div class="d-flex flex-column align-items-center  justify-content-between"
+                                style=" max-height: 160px; margin-top: 65px;">
+
+                                <!--                              
+                                  <i class="fas fa-circle fa-2x red-text"></i>
+                                  <svg height="10" width="10">
+                                    <circle cx="5" cy="5" r="5"   fill="red" />
+                                  </svg>
+                                  <svg height="10" width="10">
+                                    <circle cx="5" cy="5" r="5"   fill="red" />
+                                  </svg>
+                                  <svg height="10" width="10">
+                                    <circle cx="5" cy="5" r="5"   fill="red" />
+                                  </svg>
+                                  <svg height="10" width="10">
+                                    <circle cx="5" cy="5" r="5"   fill="red" />
+                                  </svg>
+                                  <svg height="10" width="10">
+                                    <circle cx="5" cy="5" r="5"   fill="red" />
+                                  </svg> -->
+
+
+
+
+
+
+                            </div>
+                            <div class="d-flex flex-column text-center mx-auto">
+                                <h1 class="white-text px-3 py-1  times-serif">Thursday</h1>
+                                <div class="list-group-flush text-center">
+                                    <div class="list-group-item d-flex flex-column align-center-center">
+                                        <p class="mb-0 white-text h5-responsive">Registration</p>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <p class="mb-0 white-text h5-responsive"> Hospitality Opens</p>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <p class="mb-0 white-text h5-responsive"> Cocktail Hour</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+                            <!-- Title -->
+
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+                    <!-- Card -->
+                    <div class="card day rounded-lg z-depth-1 col-8 mx-auto mt-5 rgba-white-light border-0 white-text"
+                        style="min-height: 200px;">
+
+
+                        <!-- Card content -->
+                        <div class="card-body d-flex flex-row col-12 py-2 ">
+                            <div class="d-flex flex-column align-items-center  justify-content-between"
+                                style="min-height: 100%;">
+                                <!-- <svg height="10" width="10">
+                                    <circle cx="5" cy="5" r="5"   fill="red" />
+                                  </svg>
+                                  <svg height="10" width="10">
+                                    <circle cx="5" cy="5" r="5"   fill="red" />
+                                  </svg>
+                                  <svg height="10" width="10">
+                                    <circle cx="5" cy="5" r="5"   fill="red" />
+                                  </svg>
+                                  <svg height="10" width="10">
+                                    <circle cx="5" cy="5" r="5"   fill="red" />
+                                  </svg>
+                                <i class="fas fa-circle fa-2x red-text"></i>
+                                <svg height="10" width="10">
+                                  <circle cx="5" cy="5" r="5"   fill="red" />
+                                </svg>
+                                <svg height="10" width="10">
+                                  <circle cx="5" cy="5" r="5"   fill="red" />
+                                </svg>
+                                <svg height="10" width="10">
+                                  <circle cx="5" cy="5" r="5"   fill="red" />
+                                </svg>
+                                <svg height="10" width="10">
+                                  <circle cx="5" cy="5" r="5"   fill="red" />
+                                </svg> -->
+
+                            </div>
+                            <div class="d-flex flex-column text-center mx-auto">
+                                <h1 class="white-text px-3 py-1 times-serif">Friday</h1>
+                                <div>
+                                    <p class="h5-responsive ">Registration Continues</p>
+                                    <p class="h5-responsive ">Lunch For All Registerd Guest</p>
+                                    <p class="h5-responsive ">Vendor hall opens</p>
+                                    <p class="h5-responsive ">Hospitality Suite Opens</p>
+                                    <p class="h5-responsive ">Sex in SIN City!!</p>
+                                    <ul>
+                                        <li class=" p-3 rounded-sm grey lighten-2 border red-text">Wear your sexiest
+                                            attire to dance the night away and mingle your heart out.</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- Title -->
+
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+                    <!-- Card -->
+                    <div class="card day rounded-lg z-depth-1 col-8 mx-auto mt-5 rgba-white-light border-0 white-text"
+                        style="min-height: 200px;">
+
+
+                        <!-- Card content -->
+                        <div class="card-body d-flex flex-row col-12 py-2">
+                            <div class="d-flex flex-column align-items-center  justify-content-between"
+                                style="min-height: 100%;">
+
+                        
+
+                            </div>
+                            <div class="d-flex flex-column text-center mx-auto">
+                                <h1 class="white-text px-3 py-1 times-serif">Saturday</h1>
+                                <div>
+                                    <p class="h5-responsive">Registration continues </p>
+                                    <p class="h5-responsive">Vendors hall continues </p>
+                                    <p class="h5-responsive">Pool/Day party time to take a dip in the pool or relax
+                                        poolside with a frozen drink.</p>
+                                    <p class="h5-responsive">Time to spend some time on your own and enjoy Vegas with
+                                        friends </p>
+                                    <p class="h5-responsive">Dance, dance, dance!! Grab your glow sticks, or your glow
+                                        paint and let's party into the night... it's Vegas boysssss</p>
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- Title -->
+
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+
+                    <!-- Card -->
+                    <div class="card day rounded-lg z-depth-1 col-8 mx-auto mt-5 rgba-white-light border-0 white-text"
+                        style="min-height: 200px;">
+
+
+                        <!-- Card content -->
+                        <div class="card-body d-flex flex-row col-12 py-2">
+                            <div class="d-flex flex-column align-items-center  justify-content-between"
+                                style="min-height: 100%;">
+
+
+                            </div>
+                            <div class="d-flex flex-column text-center mx-auto">
+                                <h1 class="white-text px-3 py-1 times-serif">Sunday</h1>
+                                <div>
+                                    <p>Karaoke/Drag hip-hop brunch. Let's have have a good time with a talented drag
+                                        brunch & host and some of us who want to get up and show off our talents for
+                                        karaoke after a few mimosas.</p>
+                                    <p>This is a time to get out and about and enjoy Vegas or just relax, or play the
+                                        slots with friends. </p>
+                                    <p>Rep your HBCU!! Yeah boy, this is a mixer for those HBCU guys and fraternity
+                                        Brothers, but EVERYONE is welcome! So rock those HBCU or frat colors and shirts
+                                        if ya got'em</p>
+                                    <p>Dinner banquet. For the last night in Vegas, let's enjoy some good food, live
+                                        entertainment and great conversation.</p>
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- Title -->
+
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+                    <!-- Card -->
+                    <div class="card rounded-lg z-depth-1 col-8 mx-auto mt-5  rgba-white-light border-0 white-text"
+                        style="min-height: 100px;">
+
+
+                        <!-- Card content -->
+                        <div class="card-body d-flex flex-row col-12 py-2">
+                            <div class="d-flex flex-column align-items-center align-self-start justify-content-between"
+                                style="min-height: 100%;">
+                             
+
+                            </div>
+                            <div class="d-flex flex-column text-center mx-auto ">
+                                <h1 class="white-text px-3 py-1 times-serif">Monday</h1>
+                                <div>
+                                    <p>Till we see you again breakfast! </p>
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- Title -->
+
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- end page content -->
+    <footer class="black pb-5 pt-5 d-flex flex-column">
+
+
+        <div class="d-flex flex-row col-10 mx-auto justify-content-center align-items-center">
+
+            <!-- Footer Menu -->
+            <div class="col-1 d-flex flex-column align-items-center mt-5">
+                <p class="h4-responsive text-white border-bottom">Menu</p>
+                <ul class="text-white ">
+                    <li class="list-group-item black white-text py-0 pl-0"> <a href="#hotel"
+                            class="text-decoration-none white-text">Hotel</a> </li>
+                    <li class="list-group-item black white-text py-0 pl-0"> <a href="#pricing"
+                            class="text-decoration-none white-text">Pricing</a> </li>
+                    <li class="list-group-item black white-text py-0 pl-0"> <a href="/vendor"
+                            class="text-decoration-none white-text">Vendors</a> </li>
+                    <li class="list-group-item black white-text py-0 pl-0"><a href="/volunteer"
+                            class="text-decoration-none white-text">Volunteer</a> </li>
+                    <li class="list-group-item black white-text py-0 pl-0"> <a href="/itinerary"
+                            class="text-decoration-none white-text">Itinerary</a> </li>
+                    <li class="list-group-item black white-text py-0 pl-0"><a href="#contact"
+                            class="text-decoration-none white-text">Contact</a> </li>
+                </ul>
+            </div>
+            <!-- End of Footer Menu -->
+
+            <!-- company logos -->
+
+            <div class="mt-5 col-8 d-flex flex-row mb-4">
+                <img src="https://i.ibb.co/vJS3Jn0/Royal-Flush-Logo-Transparent.png" alt="" class="col-4">
+                <img src="https://i.ibb.co/K0zr0t1/Small-Images-BA-Tech.png" alt="" class="col-4">
+                <img src="https://i.ibb.co/JrR1phw/Tha-Big-Dogs-Red-1.png" alt="" class="col-4">
+
+
+            </div>
+            <!-- End of company logos -->
+
+            <div class="eventbrite-widget-modal-trigger-291099375067">
+
+            </div>
+
+        </div>
+
+        <div
+            class="social-footer-icons  d-flex flex-row col-9 mx-auto align-items-center border-top pt-3 justify-content-around">
+            <p class="white-text mr-5 col-4">Design By: BA Technologies</p>
+            <p class="white-text col-4 text-center">@Copyright 2022</p>
+            <ul class="menu simple d-flex flex-row col-3 mx-auto justify-content-between">
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook fa-2x white-text"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram fa-2x  white-text"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p fa-2x  white-text"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fab fa-twitter fa-2x  white-text white-text"
+                            aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+
+
+
+    </footer>
+
+
+</body>
+
+</html>
