@@ -16,16 +16,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //make the contact page the the first page on the app
 app.route("/").get(function (req, res) {
-  res.sendFile(process.cwd() + "/public/index.html");
+  res.sendFile(process.cwd() + "./public/index.html");
 });
 
 
 app.get("/volunteer", function (req, res,html) {
-  res.sendFile(process.cwd() + "/public/views/volunteer.html");
+  res.sendFile(process.cwd() + "./public/views/volunteer.html");
 });
 
 app.get("/vendor", function (req, res,html) {
-  res.sendFile(process.cwd() + "/public/views/vendor.html");
+  res.sendFile(process.cwd() + "./public/views/vendor.html");
 });
 
 app.get("/itinerary", function (req, res,html) {
@@ -34,7 +34,7 @@ app.get("/itinerary", function (req, res,html) {
 
 
 app.post("/send", (req, res) => {
-    res.sendFile(process.cwd() + "/public/views/send.html");
+    res.sendFile(process.cwd() + "./public/views/send.html");
     //1.
     let form = new multiparty.Form();
     let data = {
