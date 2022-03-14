@@ -71,16 +71,16 @@ app.post("/send", (req, res) => {
 
 
 //port will be 5000 for testing
-const PORT = process.env.PORT || 5005;
+// const PORT = process.env.PORT || 5005;
 
 // app.use("/public/css",function(req, res){
 
 // });
 
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}...`);
+// app.listen(PORT, () => {
+//   console.log(`Listening on port ${PORT}...`);
  
-});
+// });
 
 // const hostname = '127.0.0.1';
 // const port = 3000;
