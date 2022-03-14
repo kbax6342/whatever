@@ -91,9 +91,9 @@ app.listen(PORT, () => {
 //   res.end('NodeJS server running on Shared Hosting\n');
 // });
 
-server.listen(port, hostname, () => {
-  console.log('Server running at http://${hostname}:${port}/');
-});
+// app.listen(port, hostname, () => {
+//   console.log('Server running at http://${hostname}:${port}/');
+// });
 
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com", //replace with your email provider

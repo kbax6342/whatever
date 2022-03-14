@@ -32,7 +32,7 @@
     }
   },
   "scripts": {
-    "build":"node app.js",
+    "build":"node server.js",
     "watch": "npm-watch",
     "test": "",
     "start": "node server.js"
