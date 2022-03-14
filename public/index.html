@@ -424,7 +424,7 @@
               <p class=" text-black  text-uppercase   border-bottom">Jackpot <span
                   class="red-text font-weight-bold h3-responsive">$300</span> </p>
               <!-- Text -->
-              <p class="" style="font-size: clamp(18px,1vw,24px) ;"">It's time for me to shine and party where the men are, So let's go!!!
+              <p class="" style="font-size: clamp(18px,1vw,24px) ;">It's time for me to shine and party where the men are, So let's go!!!
               </p>
               <ul class=" black-text text-left col-lg-5 mx-auto " style=" list-style: none;">
                 <li style="font-size:clamp(18px,1vw,24px);"> <img src="https://i.ibb.co/0tX782g/las-vegas-1.png" alt=""
@@ -436,11 +436,37 @@
                     class="col-2"> A weekend to remember</li>
                 </ul>
 
-                <!-- You can customize this button any way you like -->
-                <div class="red px-3 py-2 white-text d-flex col-4 justify-content-center mx-auto"
-                  style="font-size: 14px;">
+              
+
+                <!-- Button trigger modal -->
+                <button class="red px-3 py-2 white-text d-flex col-4 justify-content-center mx-auto" type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal" style="font-size: 14px;">
                   Buy Tickets
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="eventbrite-widget-container-291099375067"></div>
+
+                    
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
             </div>
           </div>
         </a>
@@ -740,9 +766,9 @@
 
   </footer>
 
-  <script src="" async defer></script>
+  <!-- <script src="" async defer></script>
   <!-- Noscript content for added SEO -->
-  <noscript><a href="https://www.eventbrite.com/e/royal-flush-vegas-tickets-291099375067" rel="noopener noreferrer"
+  <!-- <noscript><a href="https://www.eventbrite.com/e/royal-flush-vegas-tickets-291099375067" rel="noopener noreferrer"
       target="_blank">Buy Tickets on Eventbrite</a></noscript>
 
 
@@ -768,7 +794,26 @@
 
     $("#centralModalSuccess").on('show.bs.modal', function(){
   
-});
+}); -->
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+                        
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '291099375067',
+        iframeContainerId: 'eventbrite-widget-container-291099375067',
+
+        // Optional
+        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
+</script>
+<script>
 
     function myFunction2(imgs) {
       // Get the expanded image
