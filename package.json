@@ -34,7 +34,7 @@
   "scripts": {
     "build":"node server.js",
     "watch": "npm-watch",
-    "test": "",
+    "test": "node server.js",
     "start": "node server.js"
   },
   "author": "",

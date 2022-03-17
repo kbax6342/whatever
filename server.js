@@ -12,20 +12,20 @@ const http = require('http');
 const app = express();
 
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 //make the contact page the the first page on the app
 app.route("/").get(function (req, res) {
-  res.sendFile(process.cwd() + "./public/index.html");
+  res.sendFile(process.cwd() + "/public/index.html");
 });
 
 
 app.get("/volunteer", function (req, res,html) {
-  res.sendFile(process.cwd() + "./public/views/volunteer.html");
+  res.sendFile(process.cwd() + "/public/views/volunteer.html");
 });
 
 app.get("/vendor", function (req, res,html) {
-  res.sendFile(process.cwd() + "./public/views/vendor.html");
+  res.sendFile(process.cwd() + "/public/views/vendor.html");
 });
 
 app.get("/itinerary", function (req, res,html) {
@@ -34,7 +34,7 @@ app.get("/itinerary", function (req, res,html) {
 
 
 app.post("/send", (req, res) => {
-    res.sendFile(process.cwd() + "./public/views/send.html");
+    res.sendFile(process.cwd() + "/public/views/send.html");
     //1.
     let form = new multiparty.Form();
     let data = {
@@ -54,7 +54,7 @@ app.post("/send", (req, res) => {
         lname: data.lname,
         to: process.env.EMAIL,
         subject: data.subject,
-        text: `Patron: ${data.patrons} \n${data.fname}  ${data.lname} <${data.email}> \n\n${data.message}`
+        text: `Patron: ${data.patrons} \n${data.fname}  ${data.lname}  <${data.email}> \n\n${data.message}`
       };
   
       //3.
@@ -70,30 +70,14 @@ app.post("/send", (req, res) => {
   });
 
 
-//port will be 5000 for testing
-// const PORT = process.env.PORT || 5005;
+  
 
-// app.use("/public/css",function(req, res){
 
-// });
+ app.listen(3000)
 
-// app.listen(PORT, () => {
-//   console.log(`Listening on port ${PORT}...`);
- 
-// });
 
-// const hostname = '127.0.0.1';
-// const port = 3000;
 
-// const server = http.createServer((req, res) => {
-//   res.statusCode = 200;
-//   res.setHeader('Content-Type', 'text/plain');
-//   res.end('NodeJS server running on Shared Hosting\n');
-// });
 
-// app.listen(port, hostname, () => {
-//   console.log('Server running at http://${hostname}:${port}/');
-// });
 
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com", //replace with your email provider

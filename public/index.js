@@ -2,6 +2,7 @@
 
 //get the form by its id
 const form = document.getElementById("contact-form"); 
+
 const div = document.getElementById("results");
 
 
@@ -20,6 +21,7 @@ const formEvent = form.addEventListener("submit", (event) => {
 
 
 
+
 const sendMail = (mail) => {
       fetch("/", {
       method: "post", //2.
@@ -33,5 +35,7 @@ const sendMail = (mail) => {
       
     });
   };
+
+
 
 

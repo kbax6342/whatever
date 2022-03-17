@@ -11,9 +11,9 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/hover-styling.css">
-    <link rel="stylesheet" href="css/img-gallery.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/hover-styling.css">
+    <link rel="stylesheet" href="/public/css/img-gallery.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -80,9 +80,9 @@
 
 </head>
 
-<body>
-    <section id="nav">
-        <div class="jumbotron card card-image p-0 "
+<body style="background-color: black;">
+    <section id="nav" >
+        <div class="jumbotron card card-image p-0 pb-5"
             style="background-image: url(https://i.ibb.co/TqD5VdH/The-Big-Dogs-3.png); background-size: cover; min-height: 52em;">
             <!--Navbar-->
             <nav class="navbar navbar-expand-lg navbar-dark transparent">
@@ -104,10 +104,10 @@
                     <ul class="navbar-nav mr-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link h4-responsive" href="#hotel">Hotel</a>
+                            <a class="nav-link h4-responsive" href="/#hotel">Hotel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link h4-responsive" href="#pricing">Pricing</a>
+                            <a class="nav-link h4-responsive" href="/#pricing">Pricing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link h4-responsive" href="/vendor">Vendors</a>
@@ -117,23 +117,17 @@
                         </li>
 
                         <!-- Dropdown -->
-                        <li class="nav-item dropdown">
+                        <li class="nav-item ">
                             <a class="nav-link h4-responsive" href="/itinerary"> Itinerary</a>
-                            <div>
-                                something
-                            </div>
+                           
 
                         </li>
 
                         <!-- Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle h4-responsive" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
-                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item  kb-dropdown-item" href="#">Request Information</a>
-                                <a class="dropdown-item kb-dropdown-item " href="#contact">Contact Us</a>
-
-                            </div>
+                        <li class="nav-item ">
+                            <a class="nav-link  h4-responsive" href="/#contact"
+                              >Contact</a>
+                          
                         </li>
 
                     </ul>
@@ -147,7 +141,7 @@
             <!--/.Navbar-->
 
             <!-- page content -->
-            <section id="itinerary" class="col-8 mx-auto red-gradient py-5 mt-5">
+            <section id="itinerary" class="co-lg-8 mx-auto red-gradient py-5 mt-5 rounded-sm">
                 <p class="display-3 white-text text-center">Schedule</p>
                 <div class="row d-flex flex-column">
                     <!-- Card -->
@@ -268,23 +262,19 @@
 
                         <!-- Card content -->
                         <div class="card-body d-flex flex-row col-12 py-2">
-                            <div class="d-flex flex-column align-items-center  justify-content-between"
-                                style="min-height: 100%;">
-
-
-                            </div>
+                          
                             <div class="d-flex flex-column text-center mx-auto">
                                 <h1 class="white-text px-3 py-1 times-serif">Sunday</h1>
                                 <div>
-                                    <p>Karaoke/Drag hip-hop brunch. Let's have have a good time with a talented drag
+                                    <p  class="h5-responsive">Karaoke/Drag hip-hop brunch. Let's have have a good time with a talented drag
                                         brunch & host and some of us who want to get up and show off our talents for
                                         karaoke after a few mimosas.</p>
-                                    <p>This is a time to get out and about and enjoy Vegas or just relax, or play the
+                                    <p  class="h5-responsive">This is a time to get out and about and enjoy Vegas or just relax, or play the
                                         slots with friends. </p>
-                                    <p>Rep your HBCU!! Yeah boy, this is a mixer for those HBCU guys and fraternity
+                                    <p  class="h5-responsive">Rep your HBCU!! Yeah boy, this is a mixer for those HBCU guys and fraternity
                                         Brothers, but EVERYONE is welcome! So rock those HBCU or frat colors and shirts
                                         if ya got'em</p>
-                                    <p>Dinner banquet. For the last night in Vegas, let's enjoy some good food, live
+                                    <p  class="h5-responsive">Dinner banquet. For the last night in Vegas, let's enjoy some good food, live
                                         entertainment and great conversation.</p>
                                 </div>
                             </div>
@@ -300,21 +290,17 @@
                     </div>
                     <!-- Card -->
                     <!-- Card -->
-                    <div class="card rounded-lg z-depth-1 col-8 mx-auto mt-5  rgba-white-light border-0 white-text"
+                    <div class="card day rounded-lg z-depth-1 col-8 mx-auto mt-5  rgba-white-light border-0 white-text"
                         style="min-height: 100px;">
 
 
                         <!-- Card content -->
                         <div class="card-body d-flex flex-row col-12 py-2">
-                            <div class="d-flex flex-column align-items-center align-self-start justify-content-between"
-                                style="min-height: 100%;">
-                             
-
-                            </div>
+                         
                             <div class="d-flex flex-column text-center mx-auto ">
                                 <h1 class="white-text px-3 py-1 times-serif">Monday</h1>
                                 <div>
-                                    <p>Till we see you again breakfast! </p>
+                                    <p  class="h5-responsive">Till we see you again breakfast! </p>
                                 </div>
                             </div>
 
@@ -351,69 +337,75 @@
 
 
 
-    <!-- end page content -->
+  
     <footer class="black pb-5 pt-5 d-flex flex-column">
 
 
         <div class="d-flex flex-row col-10 mx-auto justify-content-center align-items-center">
-
-            <!-- Footer Menu -->
-            <div class="col-1 d-flex flex-column align-items-center mt-5">
-                <p class="h4-responsive text-white border-bottom">Menu</p>
-                <ul class="text-white ">
-                    <li class="list-group-item black white-text py-0 pl-0"> <a href="#hotel"
-                            class="text-decoration-none white-text">Hotel</a> </li>
-                    <li class="list-group-item black white-text py-0 pl-0"> <a href="#pricing"
-                            class="text-decoration-none white-text">Pricing</a> </li>
-                    <li class="list-group-item black white-text py-0 pl-0"> <a href="/vendor"
-                            class="text-decoration-none white-text">Vendors</a> </li>
-                    <li class="list-group-item black white-text py-0 pl-0"><a href="/volunteer"
-                            class="text-decoration-none white-text">Volunteer</a> </li>
-                    <li class="list-group-item black white-text py-0 pl-0"> <a href="/itinerary"
-                            class="text-decoration-none white-text">Itinerary</a> </li>
-                    <li class="list-group-item black white-text py-0 pl-0"><a href="#contact"
-                            class="text-decoration-none white-text">Contact</a> </li>
+    
+    
+          <div class="d-flex flex-column">
+            <!-- <p class="h2-responsive text-white  text-center mb-3 ">Menu</p> -->
+            <div class=" d-flex flex-row align-items-center ">
+             
+              <ul class="text-white ">
+                <li class="list-group-item black white-text py-0 pl-0  h2-responsive"> <a href="#hotel"
+                    class="text-decoration-none white-text">Hotel</a> </li>
+                <li class="list-group-item black white-text py-0 pl-0  h2-responsive"> <a href="#pricing"
+                    class="text-decoration-none white-text">Pricing</a> </li>
+                <li class="list-group-item black white-text py-0 pl-0  h2-responsive"> <a href="/vendor" class="text-decoration-none white-text">Vendors</a> </li>
                 </ul>
+                <ul class="d-flex flex-column ">
+                   
+                <li class="list-group-item black white-text py-0 pl-0 h2-responsive"><a href="/volunteer"
+                    class="text-decoration-none white-text">Volunteer</a> </li>
+                <li class="list-group-item black white-text py-0 pl-0  h2-responsive"> <a href="/itinerary"
+                    class="text-decoration-none white-text">Itinerary</a> </li>
+                <li class="list-group-item black white-text py-0 pl-0  h2-responsive"><a href="#contact"
+                    class="text-decoration-none white-text">Contact</a> </li>
+              </ul>
             </div>
-            <!-- End of Footer Menu -->
-
-            <!-- company logos -->
-
-            <div class="mt-5 col-8 d-flex flex-row mb-4">
-                <img src="https://i.ibb.co/vJS3Jn0/Royal-Flush-Logo-Transparent.png" alt="" class="col-4">
-                <img src="https://i.ibb.co/K0zr0t1/Small-Images-BA-Tech.png" alt="" class="col-4">
-                <img src="https://i.ibb.co/JrR1phw/Tha-Big-Dogs-Red-1.png" alt="" class="col-4">
-
-
-            </div>
-            <!-- End of company logos -->
-
-            <div class="eventbrite-widget-modal-trigger-291099375067">
-
-            </div>
-
+    
+          </div>
+         
+    
+          <!-- company logos -->
+    
+          <div class="mt-5 d-none  col-8 d-lg-flex flex-row mb-4">
+            <img src="https://i.ibb.co/vJS3Jn0/Royal-Flush-Logo-Transparent.png" alt="" class="col-4">
+            <img src="https://i.ibb.co/K0zr0t1/Small-Images-BA-Tech.png" alt="" class="col-4">
+            <img src="https://i.ibb.co/JrR1phw/Tha-Big-Dogs-Red-1.png" alt="" class="col-4">
+    
+    
+          </div>
+          <!-- End of company logos -->
+    
+          <div class="eventbrite-widget-modal-trigger-291099375067">
+    
+          </div>
+    
         </div>
-
+    
         <div
-            class="social-footer-icons  d-flex flex-row col-9 mx-auto align-items-center border-top pt-3 justify-content-around">
-            <p class="white-text mr-5 col-4">Design By: BA Technologies</p>
-            <p class="white-text col-4 text-center">@Copyright 2022</p>
-            <ul class="menu simple d-flex flex-row col-3 mx-auto justify-content-between">
-                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook fa-2x white-text"
-                            aria-hidden="true"></i></a>
-                </li>
-                <li><a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram fa-2x  white-text"
-                            aria-hidden="true"></i></a></li>
-                <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p fa-2x  white-text"
-                            aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/?lang=en"><i class="fab fa-twitter fa-2x  white-text white-text"
-                            aria-hidden="true"></i></a></li>
-            </ul>
+          class="social-footer-icons text-center d-flex flex-column flex-lg-row col-lg-9 mx-auto align-items-center border-top pt-3 justify-content-around">
+          <p class="white-text mr-lg-5 col-lg-4">Design By: BA Technologies</p>
+          <p class="white-text col-lg-4 text-center mb-3 mb-lg-0">@Copyright 2022</p>
+          <ul class="menu simple d-flex flex-row col-lg-3 mx-auto mt-4 justify-content-between">
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook fa-2x white-text" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram fa-2x  white-text"
+                  aria-hidden="true"></i></a></li>
+            <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p fa-2x  white-text"
+                  aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fab fa-twitter fa-2x  white-text white-text"
+                  aria-hidden="true"></i></a></li>
+          </ul>
         </div>
-
-
-
-    </footer>
+    
+    
+    
+      </footer>
+    
 
 
 </body>
