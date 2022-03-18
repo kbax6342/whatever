@@ -182,16 +182,16 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="https://i.ibb.co/k0XWX05/bed-2.jpg" alt="First slide">
+                <img class="d-block w-100" src="https://i.ibb.co/Ks1bLws/pool-4.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://i.ibb.co/Z2tjFnW/bed-1.jpg" alt="Second slide">
+                <img class="d-block w-100" src="https://i.ibb.co/KVbRWpv/2-bd-2.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://i.ibb.co/dcTTQSb/bed-3.jpg" alt="Third slide">
+                <img class="d-block w-100" src="https://i.ibb.co/mymxV7j/2-bed-3.jpg" alt="Third slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://i.ibb.co/cQrndZ8/bed-4.jpg" alt="Third slide">
+                <img class="d-block w-100" src="https://i.ibb.co/b3gD9mW/2-bed-4.jpg" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -209,7 +209,7 @@
   
         </div>
         
-        <div  id="two-bedroom-content" class="d-flex flex-column col-lg-4  white-text    align-self-stretch justify-content-between">
+        <div  id="two-bedroom-content" class="d-flex flex-column col-lg-4  white-text   mt-3 mt-lg-0 align-self-stretch justify-content-between">
       
           
           <h3 class="red-text font-weight-bold"> Two Bedroom Suite</h3>
@@ -245,16 +245,16 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="https://i.ibb.co/HV2882M/2-bed-1.jpg" alt="First slide">
+              <img class="d-block w-100" src="https://i.ibb.co/k0XWX05/bed-2.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://i.ibb.co/KVbRWpv/2-bd-2.jpg" alt="Second slide">
+              <img class="d-block w-100" src="https://i.ibb.co/Z2tjFnW/bed-1.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://i.ibb.co/mymxV7j/2-bed-3.jpg" alt="Third slide">
+              <img class="d-block w-100" src="https://i.ibb.co/dcTTQSb/bed-3.jpg" alt="Third slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://i.ibb.co/b3gD9mW/2-bed-4.jpg" alt="fourth slide">
+              <img class="d-block w-100" src="https://i.ibb.co/cQrndZ8/bed-4.jpg" alt="fourth slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators-1" role="button" data-slide="prev">
@@ -372,7 +372,7 @@
               </ul>
 
               <!-- You can customize this button any way you like -->
-              <div class="red px-3 py-2 white-text d-flex col-8 justify-content-center mx-auto"
+              <div  id="eventbrite-widget-modal-trigger-291099375067" type="button" class="red px-3 py-2 white-text d-flex col-8 justify-content-center mx-auto"
                 style="font-size: 14px;">
                 Buy Tickets
               </div>
@@ -562,12 +562,6 @@
 
 
 
-
-
-
-
-
-
           <button type="submit"
             class="peach-gradient p-3 col-8 mx-auto d-flex justify-content-center align-items-center rounded-pill white-text text-uppercase border-0">
             Submit
@@ -693,25 +687,26 @@
 
   </footer>
 
+ <!-- Noscript content for added SEO -->
+<noscript><a href="https://www.eventbrite.com/e/royal-flush-vegas-tickets-291099375067" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+<!-- You can customize this button any way you like -->
+<button id="eventbrite-widget-modal-trigger-291099375067" type="button">Buy Tickets</button>
 
-  <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
-  <script type="text/javascript">
-    var exampleCallback = function () {
-      console.log('Order complete!');
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
     };
 
     window.EBWidgets.createWidget({
-      // Required
-      widgetType: 'checkout',
-      eventId: '291099375067',
-      iframeContainerId: 'eventbrite-widget-container-291099375067',
-
-      // Optional
-      iframeContainerHeight: 425, // Widget height in pixels. Defaults to a minimum of 425px if not provided
-      onOrderComplete: exampleCallback // Method called when an order has successfully completed
+        widgetType: 'checkout',
+        eventId: '291099375067',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-291099375067',
+        onOrderComplete: exampleCallback
     });
-  </script>
+</script>
   <script>
 
     function myFunction1(imgs) {
